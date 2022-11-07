@@ -1,5 +1,5 @@
 :root {
-  --blue-color: #2196f3;
+  --accent-color: #2196f3;
 
   --black-color: #000000;
   --second-black-color: #212121;
@@ -12,6 +12,8 @@
   --grey-color: #757575;
   --second-grey-color: #ececec;
   --third-grey-color: #eeeeee;
+
+  --color-social-icons: #afb1b8;
 }
 
 *,
@@ -80,7 +82,7 @@ body {
 }
 
 .logo-span {
-  color: var(--blue-color);
+  color: var(--accent-color);
 }
 .nav-site {
   display: flex;
@@ -104,11 +106,11 @@ body {
 }
 .nav-site-item:hover,
 .nav-site-item:focus {
-  color: var(--blue-color);
+  color: var(--accent-color);
 }
 
 .current {
-  color: var(--blue-color);
+  color: var(--accent-color);
 }
 
 .nav-contact {
@@ -123,20 +125,38 @@ body {
   font-size: 14px;
 }
 
-.nav-contact .item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.nav-contact-item {
-  display: block;
+.contact-touch-item {
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.nav-contact-item:hover {
-  color: var(--blue-color);
+.nav-contact-item {
 }
 
+.contact-touch-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contact-touch-item:hover {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.nav-contact-item:hover {
+  color: var(--accent-color);
+}
+
+.nav-icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  fill: var(--grey-color);
+}
+
+.nav-icon:hover {
+  color: var(--accent-color);
+}
 /*footer section*/
 
 .footer-section {
@@ -171,7 +191,7 @@ body {
 }
 .company-address:hover,
 .company-address:focus {
-  color: var(--blue-color);
+  color: var(--accent-color);
 }
 
 .contact-information {
@@ -187,7 +207,7 @@ body {
 
 .contact-information:hover,
 .contact-information:focus {
-  color: var(--blue-color);
+  color: var(--accent-color);
 }
 
 /* MAIN PAGE */
@@ -227,7 +247,7 @@ body {
   padding: 10px 32px;
 
   cursor: pointer;
-  background-color: var(--blue-color);
+  background-color: var(--accent-color);
   color: var(--white-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-weight: 700;
@@ -350,6 +370,10 @@ body {
 
 .team-item {
   width: 270px;
+  height: 428px;
+  background-color: var(--white-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 0px 0px 4px 4px;
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
@@ -370,12 +394,46 @@ body {
 }
 
 .position-team-member {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.1;
   color: var(--grey-color);
   letter-spacing: 0.03em;
 }
 
+.team-social-icons {
+  display: flex;
+}
+
+.team-icon {
+  text-align: center;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  justify-content: center;
+}
+
+.team-icon:hover,
+.team-icon:focus {
+  background-color: var(--accent-color);
+  border-radius: 50px;
+}
+
+.team-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icons {
+  fill: var(--color-social-icons);
+  width: 20px;
+  height: 20px;
+  margin: 12px;
+}
+
+.social-icons:hover,
+.social-icons:focus {
+  fill: var(--white-color);
+}
 /* PORTFOLIO PAGE */
 
 .portfolio-container {
@@ -431,7 +489,7 @@ body {
 
 .portfolio-items:hover,
 .portfolio-items:focus {
-  background-color: var(--blue-color);
+  background-color: var(--accent-color);
   color: var(--white-color);
 }
 
