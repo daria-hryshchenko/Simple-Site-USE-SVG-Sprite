@@ -555,19 +555,29 @@ ul {
 .client {
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--color-social-icons);
   border-radius: 4px;
   padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-social-icons);
 }
 
 .client:not(:last-child) {
   margin-right: 30px;
 }
 
+.client:hover,
+.client:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
 .logo-client {
   margin: auto;
   padding: auto;
   justify-self: center;
+  fill: currentColor;
 }
 
 /* _________________PORTFOLIO PAGE______________ */
