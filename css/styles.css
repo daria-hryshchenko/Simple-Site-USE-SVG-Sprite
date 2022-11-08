@@ -189,8 +189,14 @@ ul {
 
 .footer-section {
   background-color: var(--footer-background-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.first-footer-section {
+  margin: 60px 70px 60px 0;
   text-align: left;
 }
 
@@ -236,6 +242,46 @@ ul {
 .contact-information:hover,
 .contact-information:focus {
   color: var(--accent-color);
+}
+
+.second-footer-section {
+  margin-top: 72px;
+}
+
+.footer-headline {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.footer-social-icons {
+  display: flex;
+}
+
+.footer-icon-li {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer-icon-li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-icon-li:hover,
+.footer-icon-li:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-icons {
+  margin: 12px 12px;
+  justify-self: center;
+  fill: var(--white-color);
 }
 
 /* MAIN PAGE */
@@ -357,7 +403,7 @@ ul {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  background-color: #f5f4fa;
+  background-color: var(--second-white-color);
   justify-content: center;
   text-align: center;
 }
@@ -460,7 +506,6 @@ ul {
 }
 
 .team-icon {
-  text-align: center;
   width: 44px;
   height: 44px;
   text-align: center;
@@ -478,9 +523,8 @@ ul {
 }
 
 .social-icons {
+  justify-self: center;
   fill: var(--color-social-icons);
-  width: 20px;
-  height: 20px;
   margin: 12px;
 }
 
@@ -488,7 +532,45 @@ ul {
 .social-icons:focus {
   fill: var(--white-color);
 }
-/* PORTFOLIO PAGE */
+
+/*-----Our Clients Section------*/
+
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-headline {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients-items {
+  display: flex;
+}
+
+.client {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.client:not(:last-child) {
+  margin-right: 30px;
+}
+
+.logo-client {
+  margin: auto;
+  padding: auto;
+  justify-self: center;
+}
+
+/* _________________PORTFOLIO PAGE______________ */
 
 .portfolio-container {
   background-color: var(--white-color);
@@ -545,6 +627,9 @@ ul {
 .portfolio-items:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .second-portfolio-ul {
@@ -558,6 +643,13 @@ ul {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+
+.box-portfolio:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  border: none;
+}
+
 .image-portfolio {
   display: block;
 }
@@ -572,8 +664,7 @@ ul {
 
 .card-content {
   padding: 20px 24px;
-  height: 110px;
-  border: 1px solid var(--third-grey-color);
+  outline: 1px solid var(--third-grey-color);
   border-top: 0;
 }
 
@@ -581,6 +672,7 @@ ul {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .project-department {
