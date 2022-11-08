@@ -242,6 +242,7 @@ ul {
 /* hero section*/
 
 .hero {
+  background-color: var(--hero-background-color);
   background-position: center;
   background-size: cover;
   max-width: 1600px;
@@ -350,6 +351,19 @@ ul {
 
 .item-container:not(:last-child) {
   margin-right: 30px;
+}
+
+.icon-container {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  justify-content: center;
+  text-align: center;
+}
+
+.features-icon {
+  margin: 25px 100px;
 }
 
 .features-paragraph {
