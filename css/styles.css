@@ -142,6 +142,13 @@ ul {
 .nav-contact {
   display: flex;
   margin-left: auto;
+}
+
+.nav-contact-item {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   text-decoration: none;
   color: var(--nav-contact-color);
@@ -149,16 +156,6 @@ ul {
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
-  text-align: center;
-}
-
-.contact-touch-item {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: var(--nav-contact-color);
 }
 
 .contact-touch-item:not(:last-child) {
@@ -175,9 +172,8 @@ ul {
 }
 
 .nav-icon {
-  align-self: center;
   margin-right: 10px;
-  --icon-color: currentColor;
+  fill: currentColor;
 }
 
 /*.nav-icon:hover {
@@ -188,16 +184,17 @@ ul {
 /*footer section*/
 
 .footer-section {
+  padding: 60px 0;
   background-color: var(--footer-background-color);
 }
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .first-footer-section {
-  margin: 60px 70px 60px 0;
-  text-align: left;
+  margin-right: 70px;
 }
 
 .footer-address {
@@ -244,10 +241,6 @@ ul {
   color: var(--accent-color);
 }
 
-.second-footer-section {
-  margin-top: 72px;
-}
-
 .footer-headline {
   margin-bottom: 20px;
   font-size: 14px;
@@ -263,25 +256,30 @@ ul {
 .footer-icon-li {
   width: 44px;
   height: 44px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50px;
-  text-align: center;
-  justify-content: center;
 }
 
 .footer-icon-li:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer-icon-li:hover,
-.footer-icon-li:focus {
+.footer-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  color: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-link:hover,
+.footer-link:focus {
   background-color: var(--accent-color);
 }
 
 .footer-icons {
-  margin: 12px 12px;
-  justify-self: center;
-  fill: var(--white-color);
+  fill: currentColor;
 }
 
 /* MAIN PAGE */
@@ -384,7 +382,6 @@ ul {
 
 .features-item {
   margin-bottom: 10px;
-
   line-height: 1.1;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -400,16 +397,13 @@ ul {
 }
 
 .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--second-white-color);
-  justify-content: center;
-  text-align: center;
-}
-
-.features-icon {
-  margin: 25px 100px;
 }
 
 .features-paragraph {
@@ -475,6 +469,7 @@ ul {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 0px 0px 4px 4px;
 }
+
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -503,34 +498,36 @@ ul {
 
 .team-social-icons {
   display: flex;
+  justify-content: center;
 }
 
 .team-icon {
   width: 44px;
   height: 44px;
-  text-align: center;
-  justify-content: center;
-}
-
-.team-icon:hover,
-.team-icon:focus {
-  background-color: var(--accent-color);
-  border-radius: 50px;
 }
 
 .team-icon:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-icons {
-  justify-self: center;
-  fill: var(--color-social-icons);
-  margin: 12px;
+.social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  color: var(--color-social-icons);
 }
 
-.social-icons:hover,
-.social-icons:focus {
-  fill: var(--white-color);
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.social-icons {
+  fill: currentColor;
 }
 
 /*-----Our Clients Section------*/
@@ -553,13 +550,13 @@ ul {
 }
 
 .client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid var(--color-social-icons);
   border-radius: 4px;
-  padding: 16px 32px;
-  align-items: center;
-  justify-content: center;
   color: var(--color-social-icons);
 }
 
@@ -567,16 +564,12 @@ ul {
   margin-right: 30px;
 }
 
-.client:hover,
-.client:focus {
+.client:hover {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
 
 .logo-client {
-  margin: auto;
-  padding: auto;
-  justify-self: center;
   fill: currentColor;
 }
 
