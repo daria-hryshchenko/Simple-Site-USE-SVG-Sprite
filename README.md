@@ -1,6 +1,6 @@
 Homework 📚
 
-➡️ Improve Your HTML & CSS Skills 
+➡️ Improve My HTML & CSS Skills 
 
 ➡️ Cloned the previous lesson repository.
 
